@@ -1,0 +1,23 @@
+/* APLICANDO ESTILO NO PLANO DE FUNDO */
+body{
+    background-color: #f5f3f0;
+}
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 15px;
+}
+/* APLICANDO ESTILO NO CABEÇALHO */
+.cabecalho .container{
+    display: flex; 
+    justify-content: space-between;
+}
+/* APLICANDO ESTILO NA IMAGEM DO BANNER */
+.banner{}
+.banner img{
+    width: 100%;
+}
+
+.secaoProdutos{}
+.secaoProdutos .produtosLista{}
