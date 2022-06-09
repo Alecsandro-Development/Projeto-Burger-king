@@ -1,6 +1,10 @@
 /* APLICANDO ESTILO NO PLANO DE FUNDO */
+main{
+    font-family: 'Nunito', sans-serif;
+}
+
 body{
-    background-color: #f5f3f0;
+    background-color: #F5F3F0;
 }
 
 .container{
@@ -10,14 +14,183 @@ body{
 }
 /* APLICANDO ESTILO NO CABEÇALHO */
 .cabecalho .container{
-    display: flex; 
-    justify-content: space-between;
+    display: flex;     
 }
 /* APLICANDO ESTILO NA IMAGEM DO BANNER */
-.banner{}
 .banner img{
     width: 100%;
 }
 
-.secaoProdutos{}
-.secaoProdutos .produtosLista{}
+.secaoProdutos .listaProdutos{
+    display: flex;
+    flex-wrap: wrap; /*Quebra de linha dos produtos*/
+    justify-content: space-between;
+}
+.secaoProdutos .cardProdutos{
+    background-color: #FFF;
+    width: 233px;
+    text-align: center;
+    padding: 22px 28px;
+    border: 2px solid #F5EBDC;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.secaoProdutos .cardProdutos img {}
+.secaoProdutos .cardProdutos h3 {
+    font-size: 20px;
+    color: #502314;
+    font-weight: 700;
+    margin: 28px auto;
+    max-width: 160px;
+    min-height: 40px; /*Altura padrão para alinhamento das labels do container de produtos*/
+}
+.secaoProdutos .cardProdutos p {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 28px 0;
+}
+.secaoProdutos .cardProdutos button {
+    background: #F5F3F0 ;
+    border-radius: 8px;
+    border: none;
+    width: 177px;
+    height: 41px;
+    color: #2d2d2d;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.carrinho .infoResumo{
+    background: #502314;
+    border-radius: 32px 32px 0px 0px;
+    padding: 23px 0;
+    color:#F7F5F0;
+}
+
+.infoResumo .container{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color:#F7F5F0;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 18px;
+    align-items: center;
+  
+}
+
+.carrinho .infoUsuarioLogado{}
+.carrinho .infoUsuarioLogado h3{
+    font-weight: 500;
+    font-size: 32px;
+    color:#F7F5F0;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 18px;
+}
+.carrinho .infoUsuarioLogado p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+    color:#F7F5F0;
+    font-family: 'Nunito', sans-serif;
+}
+.carrinho .infoUsuarioLogado .infoPreco{}
+
+.carrinho .container{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Estilização do Rodapé*/
+
+.carrinho{
+    background: #FFF;
+}
+.carrinho .resumoPedido{
+    width: 80%; /*Ajuste de largura dos elementos de resumo, e botões. 80/20*/
+}
+.carrinho .resumoPedido .listaProdutos {}
+.carrinho .resumoPedido .cardProdutos {
+    background: #F5F3F0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.carrinho .resumoPedido .cardProdutos .infoNomeProduto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+.carrinho .resumoPedido .cardProdutos .infoNomeProduto img{
+    width: 150px;
+}
+.carrinho .resumoPedido .cardProdutos .infoNomeProduto p{
+    font-weight: 700;
+    font-size: 22px;
+    color: #502314;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 43px;
+}
+
+.carrinho .resumoPedido .cardProdutos .infoPreco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrinho .resumoPedido .cardProdutos .infoPreco p{
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #2d2d2d;
+}
+.carrinho .resumoPedido .cardProdutos .infoPreco img{}
+
+.carrinho .resumoPedido .cardProdutos .infoPreco button{
+    background: #e6e6e6;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 51px;
+    margin-left: 43px;
+    cursor: pointer;
+}
+
+.btnfinalizaPedido button {
+width: 20%; /*Ajuste de largura dos elementos de resumo, e botões. 80/20*/
+}    
+.btnfinalizaPedido button {
+    width: 219px;
+    height: 51px;
+    background: #db3b1d;
+    border: 4px solid #db3b1d;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btnfinalizaPedido button ~ button{
+    background: #FFF;
+    border: 4px solid #db3b1d;
+    color: #db3b1d;
+    cursor: pointer;
+    margin-top: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
